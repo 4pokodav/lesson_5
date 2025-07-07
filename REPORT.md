@@ -56,9 +56,11 @@ heavy    |	Resize, HorizontalFlip(0.7), RandomPerspective, RandomBlur(0.8), Colo
 ![Light configure](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/light/Гароу/aug_0.png) 
 ![Light configure](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/light/Гароу/aug_1.png) 
 ![Light configure](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/light/Гароу/aug_2.png)
+![Light configure](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/light/Гароу/aug_5.png)
 ![Light configure](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/light/Генос/aug_30.png) 
 ![Light configure](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/light/Генос/aug_31.png) 
 ![Light configure](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/light/Генос/aug_32.png)
+![Light configure](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/light/Генос/aug_35.png)
 
 
 **2) medium**
@@ -66,9 +68,11 @@ heavy    |	Resize, HorizontalFlip(0.7), RandomPerspective, RandomBlur(0.8), Colo
 ![Medium configure](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/medium/Гароу/aug_0.png) 
 ![Medium configure](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/medium/Гароу/aug_1.png) 
 ![Medium configure](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/medium/Гароу/aug_2.png)
+![Medium configure](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/medium/Гароу/aug_5.png)
 ![Medium configure](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/medium/Генос/aug_30.png) 
 ![Medium configure](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/medium/Генос/aug_31.png) 
 ![Medium configure](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/medium/Генос/aug_32.png)
+![Medium configure](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/medium/Генос/aug_35.png)
 
 
 **3) heavy**
@@ -76,9 +80,11 @@ heavy    |	Resize, HorizontalFlip(0.7), RandomPerspective, RandomBlur(0.8), Colo
 ![Heavy configure](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/heavy/Гароу/aug_0.png) 
 ![Heavy configure](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/heavy/Гароу/aug_1.png) 
 ![Heavy configure](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/heavy/Гароу/aug_2.png)
+![Heavy configure](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/heavy/Гароу/aug_5.png)
 ![Heavy configure](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/heavy/Генос/aug_30.png) 
 ![Heavy configure](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/heavy/Генос/aug_31.png) 
 ![Heavy configure](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/heavy/Генос/aug_32.png)
+![Heavy configure](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/heavy/Генос/aug_35.png)
 
 
 Все конфигурации пайплайнов успешно исполняются. Чем "сильнее" конфигурация, тем сильнее изменяется изображение.
