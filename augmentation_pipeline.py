@@ -31,18 +31,6 @@ class AugmentationPipeline:
         transform = transforms.Compose(list(self.augmentations.values()))
         return transform(image)
 
-def build_custom_pipeline():
-    '''
-    Создает и возвращает кастомный пайплайн с конкретным набором аугментаций
-    '''
-    pipeline = AugmentationPipeline()
-    pipeline.add_augmentation("resize", transforms.Resize((224, 224)))
-    pipeline.add_augmentation("random_blur", RandomBlur(p=0.8))
-    pipeline.add_augmentation("random_perspective", RandomPerspective(p=0.7))
-    pipeline.add_augmentation("to_tensor", transforms.ToTensor())
-    pipeline.add_augmentation("gaussian_noise", AddGaussianNoise(std=0.05))
-    return pipeline
-
 def save_augmented_images(pipeline, dataset, save_dir, num_images=50):
     '''
     Применяет пайплайн к изображениям из датасета и сохраняет аугментированные изображения в указанную директорию.
@@ -61,14 +49,52 @@ def save_augmented_images(pipeline, dataset, save_dir, num_images=50):
         save_path = os.path.join(class_dir, f"aug_{i}.png")
         save_image(aug_image, save_path)
 
+# Конфигурации аугментаций
+def build_light_pipeline():
+    pipeline = AugmentationPipeline()
+    pipeline.add_augmentation("resize", transforms.Resize((224, 224)))
+    pipeline.add_augmentation("horizontal_flip", transforms.RandomHorizontalFlip(p=0.3))
+    pipeline.add_augmentation("to_tensor", transforms.ToTensor())
+    
+    return pipeline
+
+def build_medium_pipeline():
+    pipeline = AugmentationPipeline()
+    pipeline.add_augmentation("resize", transforms.Resize((224, 224)))
+    pipeline.add_augmentation("horizontal_flip", transforms.RandomHorizontalFlip(p=0.5))
+    pipeline.add_augmentation("color_jitter", transforms.ColorJitter(brightness=0.2, contrast=0.2, saturation=0.2))
+    pipeline.add_augmentation("random_blur", RandomBlur(p=0.5))
+    pipeline.add_augmentation("to_tensor", transforms.ToTensor())
+
+    return pipeline
+
+def build_heavy_pipeline():
+    pipeline = AugmentationPipeline()
+    pipeline.add_augmentation("resize", transforms.Resize((224, 224)))
+    pipeline.add_augmentation("horizontal_flip", transforms.RandomHorizontalFlip(p=0.7))
+    pipeline.add_augmentation("random_perspective", RandomPerspective(p=0.7))
+    pipeline.add_augmentation("random_blur", RandomBlur(p=0.8))
+    pipeline.add_augmentation("color_jitter", transforms.ColorJitter(brightness=0.4, contrast=0.4, saturation=0.4, hue=0.1))
+    pipeline.add_augmentation("to_tensor", transforms.ToTensor()) 
+    pipeline.add_augmentation("gaussian_noise", AddGaussianNoise(std=0.05)) 
+
+    return pipeline
+
 
 if __name__ == "__main__":
     train_dir = "homework_5/data/train"
     dataset = CustomImageDataset(root_dir=train_dir)
 
-    pipeline = build_custom_pipeline()
+    # Light pipeline
+    light_pipeline = build_light_pipeline()
+    save_augmented_images(light_pipeline, dataset, "homework_5/output_augmented/light", num_images=50)
 
-    save_dir = "homework_5/output_augmented/custom_pipeline"
-    save_augmented_images(pipeline, dataset, save_dir, num_images=50)
+    # Medium pipeline
+    medium_pipeline = build_medium_pipeline()
+    save_augmented_images(medium_pipeline, dataset, "homework_5/output_augmented/medium", num_images=50)
 
-    print("Аугментированные изображения успешно сохранены.")
+    # Heavy pipeline
+    heavy_pipeline = build_heavy_pipeline()
+    save_augmented_images(heavy_pipeline, dataset, "homework_5/output_augmented/heavy", num_images=50)
+
+    print("Все аугментированные изображения успешно сохранены.")
