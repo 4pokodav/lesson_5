@@ -14,6 +14,7 @@
 
 ## Задание 2: Кастомные аугментации (20 баллов)
 Реализовал 3 кастомные аугментации: RandomBlur (случайное размытие изображения), RandomPerspective (случайное перспективная трансформация), RandomBrightnessContrast (Случайное изменение яркости и контраста).
+
 Готовые аугментации:
 
 ![Original augmentations results](https://github.com/4pokodav/lesson_5/raw/main/results/original_augs.png)
@@ -49,6 +50,7 @@ medium   |	Resize, HorizontalFlip(0.5), ColorJitter, RandomBlur(0.5)
 heavy    |	Resize, HorizontalFlip(0.7), RandomPerspective, RandomBlur(0.8), ColorJitter+, GaussianNoise
 
 Результаты применения конфигураций:
+
 **1) light**
 
 ![Augmentation](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/light/Гароу/aug_0.png) 
@@ -58,7 +60,9 @@ heavy    |	Resize, HorizontalFlip(0.7), RandomPerspective, RandomBlur(0.8), Colo
 ![Augmentation](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/light/Генос/aug_31.png) 
 ![Augmentation](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/light/Генос/aug_32.png)
 
+
 **2) medium**
+
 ![Augmentation](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/medium/Гароу/aug_0.png) 
 ![Augmentation](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/medium/Гароу/aug_1.png) 
 ![Augmentation](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/medium/Гароу/aug_2.png)
@@ -66,13 +70,16 @@ heavy    |	Resize, HorizontalFlip(0.7), RandomPerspective, RandomBlur(0.8), Colo
 ![Augmentation](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/medium/Генос/aug_31.png) 
 ![Augmentation](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/medium/Генос/aug_32.png)
 
+
 **3) heavy**
+
 ![Augmentation](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/heavy/Гароу/aug_0.png) 
 ![Augmentation](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/heavy/Гароу/aug_1.png) 
 ![Augmentation](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/heavy/Гароу/aug_2.png)
 ![Augmentation](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/heavy/Генос/aug_30.png) 
 ![Augmentation](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/heavy/Генос/aug_31.png) 
 ![Augmentation](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/heavy/Генос/aug_32.png)
+
 
 Все конфигурации пайплайнов успешно исполняются. Чем "сильнее" конфигурация, тем сильнее изменяется изображение.
 
