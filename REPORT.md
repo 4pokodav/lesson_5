@@ -50,14 +50,29 @@ heavy    |	Resize, HorizontalFlip(0.7), RandomPerspective, RandomBlur(0.8), Colo
 
 Результаты применения конфигураций:
 **1) light**
-![Augmentation](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/light/Гароу/aug_0.png) ![Augmentation](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/light/Гароу/aug_1.png) ![Augmentation](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/light/Гароу/aug_2.png)
-![Augmentation](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/light/Генос/aug_30.png) ![Augmentation](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/light/Генос/aug_31.png) ![Augmentation](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/light/Генос/aug_32.png)
+
+![Augmentation](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/light/Гароу/aug_0.png) 
+![Augmentation](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/light/Гароу/aug_1.png) 
+![Augmentation](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/light/Гароу/aug_2.png)
+![Augmentation](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/light/Генос/aug_30.png) 
+![Augmentation](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/light/Генос/aug_31.png) 
+![Augmentation](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/light/Генос/aug_32.png)
 
 **2) medium**
-![Augmentation](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/custom_pipeline/Генос/aug_31.png)
+![Augmentation](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/medium/Гароу/aug_0.png) 
+![Augmentation](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/medium/Гароу/aug_1.png) 
+![Augmentation](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/medium/Гароу/aug_2.png)
+![Augmentation](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/medium/Генос/aug_30.png) 
+![Augmentation](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/medium/Генос/aug_31.png) 
+![Augmentation](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/medium/Генос/aug_32.png)
 
 **3) heavy**
-![Augmentation](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/custom_pipeline/Генос/aug_31.png)
+![Augmentation](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/heavy/Гароу/aug_0.png) 
+![Augmentation](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/heavy/Гароу/aug_1.png) 
+![Augmentation](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/heavy/Гароу/aug_2.png)
+![Augmentation](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/heavy/Генос/aug_30.png) 
+![Augmentation](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/heavy/Генос/aug_31.png) 
+![Augmentation](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/heavy/Генос/aug_32.png)
 
 Все конфигурации пайплайнов успешно исполняются. Чем "сильнее" конфигурация, тем сильнее изменяется изображение.
 
