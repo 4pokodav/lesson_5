@@ -3,6 +3,7 @@
 ## Задание 1: Стандартные аугментации torchvision (15 баллов)
 Создал пайплайн со стандартными аугментациями. 
 Результаты пайплайна:
+
 ![Original augmentation](https://github.com/4pokodav/lesson_5/raw/main/results/pipeline_label0_img0.png)
 ![Original augmentation](https://github.com/4pokodav/lesson_5/raw/main/results/pipeline_label1_img1.png)
 ![Original augmentation](https://github.com/4pokodav/lesson_5/raw/main/results/pipeline_label2_img2.png)
@@ -14,9 +15,11 @@
 ## Задание 2: Кастомные аугментации (20 баллов)
 Реализовал 3 кастомные аугментации: RandomBlur (случайное размытие изображения), RandomPerspective (случайное перспективная трансформация), RandomBrightnessContrast (Случайное изменение яркости и контраста).
 Готовые аугментации:
+
 ![Original augmentations results](https://github.com/4pokodav/lesson_5/raw/main/results/original_augs.png)
 
 Кастомные аугментации:
+
 ![Custom augmentations results](https://github.com/4pokodav/lesson_5/raw/main/results/custom_augs.png)
 
 Кастомные аугментации успешно применяются, способы аугментации отличаются, но есть схожесть между RandomBrightnessContrast и Solarize, но RandomBrightnessContrast случайно изменяет яркость и контраст, а Solarize просто инвертирует пиксели выше определенного порога яркости.
