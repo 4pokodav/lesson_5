@@ -35,7 +35,7 @@
 Распределение изображений по классам:
 ![Class diagram](https://github.com/4pokodav/lesson_5/raw/main/results/class_diagram_all.png)
 
-Распределение распределений изображений:
+Распределение размеров изображений:
 ![Size diagram](https://github.com/4pokodav/lesson_5/raw/main/results/size_diagram_all.png)
 
 В каждом классе содержится одинаковое количество изображений. Изображения представлены разных размеров, но преобладают изображения размером 545x629.
@@ -50,7 +50,8 @@ heavy    |	Resize, HorizontalFlip(0.7), RandomPerspective, RandomBlur(0.8), Colo
 
 Результаты применения конфигураций:
 **1) light**
-![Augmentation](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/custom_pipeline/Гароу/aug_0.png)
+![Augmentation](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/light/Гароу/aug_0.png) ![Augmentation](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/light/Гароу/aug_1.png) ![Augmentation](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/light/Гароу/aug_2.png)
+![Augmentation](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/light/Генос/aug_30.png) ![Augmentation](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/light/Генос/aug_31.png) ![Augmentation](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/light/Генос/aug_32.png)
 
 **2) medium**
 ![Augmentation](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/custom_pipeline/Генос/aug_31.png)
