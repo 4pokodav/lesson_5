@@ -53,39 +53,48 @@ heavy    |	Resize, HorizontalFlip(0.7), RandomPerspective, RandomBlur(0.8), Colo
 
 **1) light**
 
-![Augmentation](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/light/Гароу/aug_0.png) 
-![Augmentation](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/light/Гароу/aug_1.png) 
-![Augmentation](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/light/Гароу/aug_2.png)
-![Augmentation](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/light/Генос/aug_30.png) 
-![Augmentation](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/light/Генос/aug_31.png) 
-![Augmentation](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/light/Генос/aug_32.png)
+![Light configure](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/light/Гароу/aug_0.png) 
+![Light configure](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/light/Гароу/aug_1.png) 
+![Light configure](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/light/Гароу/aug_2.png)
+![Light configure](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/light/Генос/aug_30.png) 
+![Light configure](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/light/Генос/aug_31.png) 
+![Light configure](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/light/Генос/aug_32.png)
 
 
 **2) medium**
 
-![Augmentation](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/medium/Гароу/aug_0.png) 
-![Augmentation](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/medium/Гароу/aug_1.png) 
-![Augmentation](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/medium/Гароу/aug_2.png)
-![Augmentation](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/medium/Генос/aug_30.png) 
-![Augmentation](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/medium/Генос/aug_31.png) 
-![Augmentation](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/medium/Генос/aug_32.png)
+![Medium configure](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/medium/Гароу/aug_0.png) 
+![Medium configure](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/medium/Гароу/aug_1.png) 
+![Medium configure](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/medium/Гароу/aug_2.png)
+![Medium configure](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/medium/Генос/aug_30.png) 
+![Medium configure](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/medium/Генос/aug_31.png) 
+![Medium configure](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/medium/Генос/aug_32.png)
 
 
 **3) heavy**
 
-![Augmentation](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/heavy/Гароу/aug_0.png) 
-![Augmentation](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/heavy/Гароу/aug_1.png) 
-![Augmentation](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/heavy/Гароу/aug_2.png)
-![Augmentation](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/heavy/Генос/aug_30.png) 
-![Augmentation](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/heavy/Генос/aug_31.png) 
-![Augmentation](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/heavy/Генос/aug_32.png)
+![Heavy configure](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/heavy/Гароу/aug_0.png) 
+![Heavy configure](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/heavy/Гароу/aug_1.png) 
+![Heavy configure](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/heavy/Гароу/aug_2.png)
+![Heavy configure](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/heavy/Генос/aug_30.png) 
+![Heavy configure](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/heavy/Генос/aug_31.png) 
+![Heavy configure](https://github.com/4pokodav/lesson_5/raw/main/output_augmented/heavy/Генос/aug_32.png)
 
 
 Все конфигурации пайплайнов успешно исполняются. Чем "сильнее" конфигурация, тем сильнее изменяется изображение.
 
 ## Задание 5: Эксперимент с размерами (10 баллов)
 
+Провел эксперименты с разными размерами изображений (64x64, 128x128, 224x224, 512x512). Для каждого размера измерил время загрузки и применения аугментаций к 100 изображениям, а также потребление памяти.
 
+![Augmentation](https://github.com/4pokodav/lesson_5/raw/main/results/size_vs_time_memory.png)
+
+Прослеживается очевидная зависимость времени обработки и потребления памяти от размера изображения. Чем больше размер изображения, тем больше потребление памяти и время обработки.
 
 ## Задание 6: Дообучение предобученных моделей (25 баллов)
 
+Дообучил модель efficientnet, проверил точность.
+
+![Augmentation](https://github.com/4pokodav/lesson_5/raw/main/results/training_plot.png)
+
+Удалось достичь хорошей точности модели (0.994), но после 4 эпохи началось переобучение.
